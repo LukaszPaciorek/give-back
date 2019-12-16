@@ -1,0 +1,36 @@
+.Header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.Header__Nav__Login li {
+  font-size: 14px;
+  color: $color__grey;
+  border: 1px solid blue;
+  justify-content: center;
+  padding: 10px;
+
+  &:hover {
+    border: 1px solid red;
+  }
+}
+
+.Header__Nav__Login li {
+  display: inline-block;
+  margin: 10px;
+}
+.Header__Main__Nav__Ul li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 18px;
+  border: 1px solid red;
+  justify-content: center;
+  padding: 10px 20px;
+
+  &:hover {
+    border: 1px solid yellow;
+  }
+}

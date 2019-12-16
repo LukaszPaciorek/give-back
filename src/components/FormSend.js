@@ -12,4 +12,4 @@ function FormSend() {
   );
 }
 
-export default FormSend;
+export { FormSend };

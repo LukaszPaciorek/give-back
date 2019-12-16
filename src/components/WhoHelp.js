@@ -12,4 +12,4 @@ function WhoHelp() {
   );
 }
 
-export default WhoHelp;
+export { WhoHelp };

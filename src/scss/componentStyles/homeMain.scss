@@ -1,0 +1,28 @@
+.Home__Main {
+  height: 850px;
+  width: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home__Main__Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 350px;
+}
+
+.Home__Main__Description {
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: -0.7px;
+}
+
+.Home__Main__Ornament {
+  height: 35px;
+  width: 250px;
+  background: transparent url('../../assets/Decoration.svg') 0% 0% no-repeat padding-box;
+}

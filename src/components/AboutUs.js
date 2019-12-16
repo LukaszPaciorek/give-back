@@ -12,4 +12,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export { AboutUs };

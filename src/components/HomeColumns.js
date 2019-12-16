@@ -12,4 +12,4 @@ function HomeColumns() {
   );
 }
 
-export default HomeColumns;
+export { HomeColumns };

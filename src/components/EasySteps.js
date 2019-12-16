@@ -12,4 +12,4 @@ function EasySteps() {
   );
 }
 
-export default EasySteps;
+export { EasySteps };
