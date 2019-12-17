@@ -12,7 +12,8 @@ import { HomeMain } from './HomeMain';
 
 function Home() {
   return (
-    <div className="home__container">
+
+    <div className="home__container" id='home'>
       <div className='home__main__cont'>
         <HomeHeader />
         <HomeMain />

@@ -1,6 +1,6 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
-import {Link} from 'react-scroll';
+import { NavLink } from 'react-router-dom';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function HomeHeader() {
   return (
@@ -14,24 +14,24 @@ function HomeHeader() {
 
       <nav className='header__main__nav'>
         <ul className='header__main__nav__ul'>
-        <Link activeClass="active" to="target" spy={true} smooth={true} hashSpy={true}
-              offset={50} duration={500} delay={1000} isDynamic={true}>
+        <Link activeClass="active" to="home" spy={true} smooth={true} hashSpy={true}
+              offset={50} duration={500} delay={100} isDynamic={true}>
               <li>Start</li>
         </Link>
-        <Link activeClass="active" to="target" spy={true} smooth={true} hashSpy={true}
-              offset={50} duration={500} delay={1000} isDynamic={true}>
+        <Link activeClass="active" to="homeColumns" spy={true} smooth={true} hashSpy={true}
+              offset={50} duration={500} delay={100} isDynamic={true}>
               <li>O co chodzi</li>
         </Link>
-        <Link activeClass="active" to="target" spy={true} smooth={true} hashSpy={true}
-              offset={50} duration={500} delay={1000} isDynamic={true}>
+        <Link activeClass="active" to="aboutUs" spy={true} smooth={true} hashSpy={true}
+              offset={50} duration={500} delay={100} isDynamic={true}>
               <li>O nas</li>
         </Link>
-        <Link activeClass="active" to="target" spy={true} smooth={true} hashSpy={true}
-              offset={50} duration={500} delay={1000} isDynamic={true}>
+        <Link activeClass="active" to="homeColumns" spy={true} smooth={true} hashSpy={true}
+              offset={50} duration={500} delay={100} isDynamic={true}>
               <li>Fundacja i organizacje</li>
         </Link>
-        <Link activeClass="active" to="target" spy={true} smooth={true} hashSpy={true}
-              offset={50} duration={500} delay={1000} isDynamic={true}>
+        <Link activeClass="active" to="contact" spy={true} smooth={true} hashSpy={true}
+              offset={50} duration={500} delay={100} isDynamic={true}>
               <li>Kontakt</li>
         </Link>
         </ul>

@@ -3,7 +3,7 @@ import React from 'react';
 
 function HomeColumns() {
   return (
-    <section className='columns'>
+    <section className='columns' id='homeColumns'>
 
         <div className='three__columns__container'>
           <div className="column">

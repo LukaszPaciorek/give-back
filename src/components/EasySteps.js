@@ -1,9 +1,9 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 function EasySteps() {
   return (
-    <div className='easy__steps'>
+    <div className='easy__steps' id='section4'>
       <div className='easy__steps__header'>
         <h2>Wystarczą 4 proste kroki</h2>
         <div className='home__main__ornament'/>
@@ -36,6 +36,9 @@ function EasySteps() {
         </div>
 
       </div>
+        <div className="home__main__button">
+          <Link to='logowanie'><button>ODDAJ <br/>RZECZY</button></Link>
+        </div>
     </div>
   );
 }
