@@ -7,8 +7,8 @@ function HomeHeader() {
     <div className='Header'>
       <nav className='Header__Nav'>
         <ul className='Header__Nav__Login'>
-          <NavLink to='/'><li>Zaloguj</li></NavLink>
-          <NavLink to='/'><li>Załóż konto</li></NavLink>
+          <NavLink to='logowanie'><li>Zaloguj</li></NavLink>
+          <NavLink to='rejestracja'><li>Załóż konto</li></NavLink>
         </ul>
       </nav>
 

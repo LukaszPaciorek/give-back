@@ -1,7 +1,6 @@
-.Home__Main__Picture {
-  height: 100px;
-  min-width: 850px;
-  background-image: url('../../assets/Form-Hero-Image.jpg');
-  background-position: cover;
-  background-position-x: -400px;
+.Home__Main__Picture div {
+  height: 910px;
+  min-width: 900px;
+  background: url('../../assets/Home-Hero-Image.jpg') no-repeat center center;
+  background-position-x: -470px;
 }

@@ -8,22 +8,20 @@ import { WhoHelp } from './WhoHelp';
 import { Contact } from './Contact';
 import { FormSend } from './FormSend';
 import { HomeMain } from './HomeMain';
-import { HomeMainPicture } from './HomeMainPicture';
 
 
 function Home() {
   return (
     <div className="Home__Container">
-      <div className="Home__Main__Container">
-        <HomeMainPicture />
+      <div className='Home__Main__Cont'>
         <HomeHeader />
         <HomeMain />
+        <HomeColumns />
+      <div className="Home__Second__Container">
+        <div className='Home__Right__Container'>
+        </div>
       </div>
-      <HomeColumns />
-      <EasySteps />
-      <AboutUs />
-      <WhoHelp />
-      <Contact />
+      </div>
     </div>
   );
 }

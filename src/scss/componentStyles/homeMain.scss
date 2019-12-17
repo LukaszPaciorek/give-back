@@ -1,10 +1,11 @@
 .Home__Main {
-  height: 850px;
+  height: 910px;
   width: 100%;
   background-position: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  border: 1px solid blue;
 }
 
 .Home__Main__Container {
@@ -13,6 +14,7 @@
   justify-content: space-between;
   align-items: center;
   height: 350px;
+  border: 1px solid red;
 }
 
 .Home__Main__Description {
@@ -25,4 +27,20 @@
   height: 35px;
   width: 250px;
   background: transparent url('../../assets/Decoration.svg') 0% 0% no-repeat padding-box;
+}
+
+.Home__Main__Button {
+    display: flex;
+    button {
+      height: 120px;
+      width: 310px;
+      margin: 20px;
+      background: transparent;
+      border-style: solid;
+      border: 0.75px solid $color__black;
+      box-shadow: none;
+      font-size: 36px;
+      font-family: $font-base;
+      cursor: pointer;
+    }
 }
