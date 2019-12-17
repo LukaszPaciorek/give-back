@@ -14,7 +14,7 @@ function HomeHeader() {
 
       <nav className='header__main__nav'>
         <ul className='header__main__nav__ul'>
-        <Link activeClass="active" to="home" spy={true} smooth={true} hashSpy={true}
+        <Link activeClass="active" to="target" spy={true} smooth={true} hashSpy={true}
               offset={50} duration={500} delay={100} isDynamic={true}>
               <li>Start</li>
         </Link>

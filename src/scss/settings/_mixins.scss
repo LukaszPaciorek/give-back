@@ -1,0 +1,6 @@
+@mixin decoration {
+  height: 35px;
+  width: 250px;
+  background: transparent url('../../assets/Decoration.svg') 0% 0% no-repeat padding-box;
+  background-position: center;
+}

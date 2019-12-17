@@ -6,7 +6,7 @@ function EasySteps() {
     <div className='easy__steps' id='section4'>
       <div className='easy__steps__header'>
         <h2>Wystarczą 4 proste kroki</h2>
-        <div className='home__main__ornament'/>
+        <div className='easy__steps__ornament'/>
       </div>
       <div className='easy__steps__container'>
 

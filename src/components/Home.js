@@ -9,7 +9,6 @@ import { Contact } from './Contact';
 import { FormSend } from './FormSend';
 import { HomeMain } from './HomeMain';
 
-
 function Home() {
   return (
 
@@ -19,6 +18,7 @@ function Home() {
         <HomeMain />
         <HomeColumns />
         <EasySteps />
+        <AboutUs />
       <div className="home__second__container">
         <div className='home__right__container'>
         </div>

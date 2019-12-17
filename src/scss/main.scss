@@ -1,6 +1,7 @@
-@import 'normalize', 'settings/_colors', 'settings/_fonts';
+@import 'normalize', 'settings/_colors', 'settings/_fonts', 'settings/_mixins';
 @import 'componentStyles/homeHeader';
 @import 'componentStyles/homeMain';
 @import 'componentStyles/homeMainPicture';
 @import 'componentStyles/homeColumns';
 @import 'componentStyles/easySteps';
+@import 'componentStyles/aboutUs';
