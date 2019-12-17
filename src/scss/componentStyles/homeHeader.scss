@@ -1,4 +1,4 @@
-.Header {
+.header {
   height: 100px;
   width: 100%;
   display: flex;
@@ -6,7 +6,7 @@
   align-items: flex-end;
 }
 
-.Header__Nav__Login li {
+.header__nav__login li {
   font-size: 14px;
   color: $color__grey;
   border: 1px solid blue;
@@ -18,11 +18,11 @@
   }
 }
 
-.Header__Nav__Login li {
+.header__nav__login li {
   display: inline-block;
   margin: 10px;
 }
-.Header__Main__Nav__Ul li {
+.header__main__nav__ul li {
   display: inline-block;
   margin: 10px;
   font-size: 18px;

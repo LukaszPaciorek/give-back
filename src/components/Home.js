@@ -12,13 +12,14 @@ import { HomeMain } from './HomeMain';
 
 function Home() {
   return (
-    <div className="Home__Container">
-      <div className='Home__Main__Cont'>
+    <div className="home__container">
+      <div className='home__main__cont'>
         <HomeHeader />
         <HomeMain />
         <HomeColumns />
-      <div className="Home__Second__Container">
-        <div className='Home__Right__Container'>
+        <EasySteps />
+      <div className="home__second__container">
+        <div className='home__right__container'>
         </div>
       </div>
       </div>

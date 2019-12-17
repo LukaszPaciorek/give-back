@@ -1,0 +1,53 @@
+.easy__steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 0;
+}
+
+.easy__steps__header {
+  font-size: 24px;
+
+  img {
+    display: block;
+    width: 75%;
+    margin: 2% auto 0 auto;
+  }
+  div {
+    margin: 0 auto;
+  }
+}
+
+.easy__steps__container {
+  width: 100%;
+  margin: 5% 0;
+  display: flex;
+  background-color: $color__white;
+  justify-content: space-around;
+  color: $color__grey;
+  padding: 5% 0;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.steps__icon {
+  justify-content: center;
+}
+
+.easy__steps__title {
+  text-align: center;
+}
+
+.easy__steps__decoration {
+  display: block;
+  border-bottom: 2px solid $color__grey;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.easy__steps__descrition {
+  padding: 2% 0;
+}

@@ -3,7 +3,7 @@ import React from 'react';
 
 function HomeMainPicture() {
   return (
-    <div className='Home__Main__Picture'>
+    <div className='home__main__picture'>
     <div></div>
     </div>
   );

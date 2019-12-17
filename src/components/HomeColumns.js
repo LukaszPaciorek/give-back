@@ -3,9 +3,9 @@ import React from 'react';
 
 function HomeColumns() {
   return (
-    <section className='Columns'>
+    <section className='columns'>
 
-        <div className='Three__Columns__Container'>
+        <div className='three__columns__container'>
           <div className="column">
             <p className="column__number">500</p>
             <p className="column__header">ODDANYCH WORKÓW</p>

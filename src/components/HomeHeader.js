@@ -4,16 +4,16 @@ import {Link} from 'react-scroll';
 
 function HomeHeader() {
   return (
-    <div className='Header'>
-      <nav className='Header__Nav'>
-        <ul className='Header__Nav__Login'>
+    <div className='header'>
+      <nav className='header__nav'>
+        <ul className='header__nav__login'>
           <NavLink to='logowanie'><li>Zaloguj</li></NavLink>
           <NavLink to='rejestracja'><li>Załóż konto</li></NavLink>
         </ul>
       </nav>
 
-      <nav className='Header__Main__Nav'>
-        <ul className='Header__Main__Nav__Ul'>
+      <nav className='header__main__nav'>
+        <ul className='header__main__nav__ul'>
         <Link activeClass="active" to="target" spy={true} smooth={true} hashSpy={true}
               offset={50} duration={500} delay={1000} isDynamic={true}>
               <li>Start</li>

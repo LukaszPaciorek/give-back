@@ -1,4 +1,4 @@
-.Home__Main {
+.home__main {
   height: 910px;
   width: 100%;
   background-position: center;
@@ -8,7 +8,7 @@
   border: 1px solid blue;
 }
 
-.Home__Main__Container {
+.home__main__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,19 +17,19 @@
   border: 1px solid red;
 }
 
-.Home__Main__Description {
+.home__main__description {
   font-size: 40px;
   text-align: center;
   letter-spacing: -0.7px;
 }
 
-.Home__Main__Ornament {
+.home__main__ornament {
   height: 35px;
   width: 250px;
   background: transparent url('../../assets/Decoration.svg') 0% 0% no-repeat padding-box;
 }
 
-.Home__Main__Button {
+.home__main__button {
     display: flex;
     button {
       height: 120px;
