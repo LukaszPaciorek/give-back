@@ -8,7 +8,6 @@ import { WhoHelp } from './WhoHelp';
 import { Contact } from './Contact';
 import { FormSend } from './FormSend';
 import { HomeMain } from './HomeMain';
-import { Contact } from './Contact';
 
 
 function Home() {
