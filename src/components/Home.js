@@ -8,6 +8,8 @@ import { WhoHelp } from './WhoHelp';
 import { Contact } from './Contact';
 import { FormSend } from './FormSend';
 import { HomeMain } from './HomeMain';
+import { Contact } from './Contact';
+
 
 function Home() {
   return (
@@ -19,6 +21,7 @@ function Home() {
         <HomeColumns />
         <EasySteps />
         <AboutUs />
+        <Contact />
       <div className="home__second__container">
         <div className='home__right__container'>
         </div>
