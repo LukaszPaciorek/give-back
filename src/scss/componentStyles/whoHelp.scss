@@ -1,0 +1,10 @@
+.who__help__header {
+  font-size: 24px;
+  text-align: center;
+  div {
+    margin: 0 auto;
+  }
+}
+.who__help__ornament {
+  @include decoration;
+}

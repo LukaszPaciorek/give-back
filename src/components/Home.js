@@ -20,6 +20,7 @@ function Home() {
         <HomeColumns />
         <EasySteps />
         <AboutUs />
+        <WhoHelp />
         <Contact />
       <div className="home__second__container">
         <div className='home__right__container'>
