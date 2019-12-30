@@ -1,3 +1,11 @@
+.who__help__container {
+  height: 600px;
+}
+
+.who__help__table {
+  display: table;
+  margin: 0 auto;
+}
 .who__help__header {
   font-size: 24px;
   text-align: center;
@@ -5,6 +13,28 @@
     margin: 0 auto;
   }
 }
+
 .who__help__ornament {
   @include decoration;
+}
+
+ul .who__help__groups {
+  min-width: 696px;
+  list-style: none;
+
+}
+
+.who__help__groups li {
+  display: inline;
+  border: 1px solid red;
+  margin: 50px;
+}
+
+.who__help__text p {
+  border: 1px solid blue;
+  font-size: 18px;
+  width: 40%;
+  display: block;
+  margin: 5% auto;
+  letter-spacing: 1.2px;
 }

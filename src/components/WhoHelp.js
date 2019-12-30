@@ -26,18 +26,25 @@ class WhoHelp extends React.Component {
 
 
     return <section>
-    <div className='who__help__header'>
-      <h2>Komu pomagamy?</h2>
-      <div className='who__help__ornament'/>
-    </div>
+      <div className='who__help__container'>
+        <div className='who__help__header'>
+          <h2>Komu pomagamy?</h2>
+          <div className='who__help__ornament'/>
+          </div>
+          <div className='who__help__table'>
+            <ul className='who__help__groups'>
+              {elements}
+            </ul>
+          </div>
+          <div className='who__help__text'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          </div>
 
-        <ul className='who__help__groups'>
-          {elements}
-        </ul>
-        <ul className='who__help__numbers'>
-          {pageNumbers}
-        </ul>
-      </section>
+          <ul className='who__help__numbers'>
+            {pageNumbers}
+          </ul>
+          </div>
+    </section>
       }
 }
 
