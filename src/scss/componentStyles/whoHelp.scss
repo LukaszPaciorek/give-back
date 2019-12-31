@@ -4,7 +4,7 @@
 
 .who__help__table {
   display: table;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .who__help__header {
   font-size: 24px;
@@ -18,16 +18,18 @@
   @include decoration;
 }
 
-ul .who__help__groups {
-  min-width: 696px;
+ul.who__help__groups {
   list-style: none;
-
+  width: 100%;
 }
 
 .who__help__groups li {
   display: inline;
+  width: 25%;
+  float: left;
   border: 1px solid red;
-  margin: 50px;
+  margin: 20px;
+  font-size: 20px;
 }
 
 .who__help__text p {
