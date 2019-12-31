@@ -18,7 +18,8 @@
   @include decoration;
 }
 
-ul.who__help__groups {
+ul.who__help__groups,
+ul.who__help__numbers {
   list-style: none;
   width: 100%;
 }
@@ -27,16 +28,31 @@ ul.who__help__groups {
   display: inline;
   width: 25%;
   float: left;
-  border: 1px solid red;
+  color: $color__grey;
   margin: 20px;
   font-size: 20px;
 }
 
 .who__help__text p {
-  border: 1px solid blue;
+  color: $color__grey;
   font-size: 18px;
   width: 40%;
   display: block;
   margin: 5% auto;
   letter-spacing: 1.2px;
+}
+.who__help__numbers {
+  display: flex;
+  justify-content: center;
+}
+.who__help__numbers li {
+  padding: 5px 10px;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0 1px 1px 1px #efefef;
+  margin-right: 1em;
+}
+.who__help__numbers li.active {
+  border: 1px solid black; 
 }

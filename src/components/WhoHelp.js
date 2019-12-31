@@ -5,24 +5,40 @@ class WhoHelp extends React.Component {
     constructor() {
       super();
       this.state = {
-        groups: ['Fundacjom', 'Organizacjom pozarządowym', 'Lokalnym zbiórkom'],
+        groups: ['Fundacjom', 'Organizacjom pozarządowym', 'Lokalnym zbiórkom', 'Fundacjom', 'Organizacjom pozarządowym', 'Lokalnym zbiórkom', 'Fundacjom', 'Organizacjom pozarządowym', 'Lokalnym zbiórkom'],
         currentPage: 1,
         textPerGroup: 3
       }
     }
+    handleClick = (event, i) => {
+      this.setState({
+        currentPage: i
+      })
+    }
+
 
     render() {
       const {groups, currentPage, textPerGroup} = this.state;
 
-      const elements = groups.map ((group, i) => {
+      const indexOfLast = currentPage * textPerGroup;
+      const indexOfFirst = indexOfLast - textPerGroup;
+      const currentGroup = groups.slice(indexOfFirst, indexOfLast);
+
+      const elements = currentGroup.map ((group, i) => {
         return <li key={i}> {group} </li>
       })
 
       const pageNumbers = [];
       for (let i=1; i <= Math.ceil(groups.length/textPerGroup); i++) {
-        const element = <li key={i}> {i} </li>
+        const element = <li key={i}
+                            onClick={e=>this.handleClick(e,i)}
+                            className={this.state.currentPage == i ? 'active' : ''}>
+                                    {i}
+                        </li>
         pageNumbers.push(element)
       }
+
+
 
 
     return <section>
