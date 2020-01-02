@@ -1,58 +1,54 @@
-.who__help__container {
-  height: 600px;
+.who__help__container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.who__help__table {
-  display: table;
-  margin: 20px auto;
-}
 .who__help__header {
+  display: flex;
+  margin: 0 auto;
   font-size: 24px;
-  text-align: center;
-  div {
-    margin: 0 auto;
+  h2 {
+    font-size: 24px;
+  }
+  .who__help__ornament {
+    @include decoration;
+    flex: 200px 100px;
   }
 }
 
-.who__help__ornament {
-  @include decoration;
+.who__help__wrap {
+  border: 1px solid blue;
 }
 
-ul.who__help__groups,
-ul.who__help__numbers {
-  list-style: none;
-  width: 100%;
-}
+.who__help__positions {
+  width: 80%;
+  height: 150px;
+  border: 1px solid red;
+  ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+      li {
+        font-size: 20px;
+        cursor: pointer;
+        color: $color__grey;
+        display: block;
+        width: 10%;
+        text-align: center;
+        margin: 3%;
+        float: left;
+        &:hover {
+          border: 1px solid $color__grey;
+        }
+        &:active {
+          style: none;
+        }
+      }
+  }
 
-.who__help__groups li {
-  display: inline;
-  width: 25%;
-  float: left;
-  color: $color__grey;
-  margin: 20px;
-  font-size: 20px;
-}
 
-.who__help__text p {
-  color: $color__grey;
-  font-size: 18px;
-  width: 40%;
-  display: block;
-  margin: 5% auto;
-  letter-spacing: 1.2px;
-}
-.who__help__numbers {
-  display: flex;
-  justify-content: center;
-}
-.who__help__numbers li {
-  padding: 5px 10px;
-  color: black;
-  cursor: pointer;
-  background-color: white;
-  box-shadow: 0 1px 1px 1px #efefef;
-  margin-right: 1em;
-}
-.who__help__numbers li.active {
-  border: 1px solid black; 
 }
