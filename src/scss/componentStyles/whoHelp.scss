@@ -19,13 +19,12 @@
 }
 
 .who__help__wrap {
-  border: 1px solid blue;
+  color: $color__grey;
 }
 
 .who__help__positions {
   width: 80%;
   height: 150px;
-  border: 1px solid red;
   ul {
     width: 100%;
     list-style: none;
@@ -44,11 +43,70 @@
         &:hover {
           border: 1px solid $color__grey;
         }
-        &:active {
-          style: none;
-        }
+      }
+        .active {
+          border: 1px solid $color__grey;
       }
   }
+}
 
+.who__help__content {
+  width: 40%;
+  text-align: center;
+  font-size: 20px;
+}
 
+.who__help__box {
+  display: flex;
+  width: 100%;
+}
+
+.who__help__elements {
+  height: 100px;
+  width: 100%;
+
+  position: relative;
+  h3 {
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+  }
+  .element__description {
+    position: absolute;
+    bottom: 35%;
+    left: 10%;
+  }
+  .element__tags {
+    position: absolute;
+    bottom: 50%;
+    right: 10%;
+  }
+}
+
+.who__help__decoration0,
+.who__help__decoration1 {
+  position: absolute;
+  width: 80%;
+  bottom: 10%;
+  border: 0.5px solid $color__grey
+}
+
+.who__help__pagination {
+  width: 100px;
+}
+div.pagination__list {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  div {
+    color: black;
+    width: 30px;
+    height: 30px;
+  }
+  .activePage {
+    border: 1px solid $color__grey;
+  }
 }

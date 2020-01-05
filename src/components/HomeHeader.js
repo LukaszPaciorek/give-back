@@ -18,15 +18,15 @@ function HomeHeader() {
               offset={50} duration={500} delay={100} isDynamic={true}>
               <li>Start</li>
         </Link>
-        <Link activeClass="active" to="homeColumns" spy={true} smooth={true} hashSpy={true}
+        <Link activeClass="active" to="easy__steps" spy={true} smooth={true} hashSpy={true}
               offset={50} duration={500} delay={100} isDynamic={true}>
               <li>O co chodzi</li>
         </Link>
-        <Link activeClass="active" to="aboutUs" spy={true} smooth={true} hashSpy={true}
+        <Link activeClass="active" to="about__us__container" spy={true} smooth={true} hashSpy={true}
               offset={50} duration={500} delay={100} isDynamic={true}>
               <li>O nas</li>
         </Link>
-        <Link activeClass="active" to="homeColumns" spy={true} smooth={true} hashSpy={true}
+        <Link activeClass="active" to="who__help__description" spy={true} smooth={true} hashSpy={true}
               offset={50} duration={500} delay={100} isDynamic={true}>
               <li>Fundacja i organizacje</li>
         </Link>

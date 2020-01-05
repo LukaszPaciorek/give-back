@@ -46,38 +46,40 @@ class WhoHelpOrganisations extends React.Component {
         const elements = currentEl.map((el, i) => {
 
             return (
-                <section key={i}>
-                  <h1> {el.header} </h1>
-                  <p> {el.description} </p>
-                  <p> {el.donation}</p>
-                </section>
+                <div key={i} className='who__help__elements'>
+                  <h3> {el.header} </h3>
+                  <div className='element__description'> {el.description} </div>
+                  <div className='element__tags'> {el.donation}</div>
+                  <div className={'who__help__decoration'+i}/>
+                </div>
             )
         });
 
         const pageNumbers = [];
         for (let i = 1; i <= Math.ceil(toRender.length / elPerPage); i++) {
 
-            const element = <li key={i} onClick={(e) => this.handleClickPage(e, i)}
-                                className={this.state.currentPage === i ? 'activePage' : ''}>{i}</li>
+            const element = <div key={i} onClick={(e) => this.handleClickPage(e, i)}
+                                className={this.state.currentPage === i ? 'activePage' : ''}>{i}</div>
             pageNumbers.push(element)
         }
 
         return (
             <>
               <div className='who__help__content'>
-                <p className={'p'}>
+                <p className='who__help__description'>
+                    Organizacje pozarządowe
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Adipisci aperiam doloribus esse excepturi, illo iste mollitia
                     nostrum odio quam.
                 </p>
               </div>
-              <section>
+              <div className='who__help__box'>
                 {elements}
-              </section>
-              <div className={'p'}>
-                <ul className={'p'}>
+              </div>
+              <div className={'who__help__pagination'}>
+                <div className={'pagination__list'}>
                   {pageNumbers}
-                </ul>
+                </div>
               </div>
             </>
         )

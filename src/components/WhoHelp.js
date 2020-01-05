@@ -19,7 +19,7 @@ class WhoHelp extends React.Component {
           <div className='who__help__ornament'/>
           </div>
           <div className='who__help__wrap'>
-            <WhoHelpWrapper link={[<div>Fundacjoooom</div>, <div>Organizacjom pozarządowym</div>, <div>Lokalnym zbiórkom</div>]}/>
+            <WhoHelpWrapper link={[<div>Fundacjom</div>, <div>Organizacjom pozarządowym</div>, <div>Lokalnym zbiórkom</div>]}/>
         </div>
       </div>
     </>
