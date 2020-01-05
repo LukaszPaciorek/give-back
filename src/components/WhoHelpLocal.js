@@ -6,15 +6,15 @@ class WhoHelpLocal extends React.Component {
         super(props);
         this.state = {
             toRender: [
-              {    header: 'Organizacja “Lorem Ipsum” 1',
-                   description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi aspernatur at, culpa nam nemo provident qui.',
-                   donation: 'Lorem ipsum dolor.'},
-               {   header: 'Organizacja “Lorem Ipsum” 2',
-                   description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi aspernatur at, culpa nam nemo provident qui.',
-                   donation: 'Lorem ipsum dolor.'},
-               {   header: 'Organizacja “Lorem Ipsum” 3',
-                   description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi aspernatur at, culpa nam nemo provident qui.',
-                   donation: 'Lorem ipsum dolor.'}
+              {    header: 'Zbiórka “Lorem Ipsum 1”',
+                   description: 'Quis varius quam quisque id diam vel quam elementum pulvinar.',
+                   donation: 'Egestas, sed, tempus.'},
+               {   header: 'Zbiórka “Lorem Ipsum 2”',
+                   description: 'Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.',
+                   donation: 'Ut, aliquam, purus, sit, amet.'},
+               {   header: 'Zbiórka “Lorem Ipsum 3”',
+                   description: 'Scelerisque in dictum non consectetur a erat nam',
+                   donation: 'Mi, quis, hendrerit, dolor.'},
             ],
             currentPage: 1,
             elPerPage: 3,

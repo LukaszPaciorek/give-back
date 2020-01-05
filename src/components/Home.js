@@ -15,13 +15,15 @@ function Home() {
 
     <div className="home__container" id='home'>
       <div className='home__main__cont'>
+        {/*
         <HomeHeader />
         <HomeMain />
         <HomeColumns />
         <EasySteps />
         <AboutUs />
+        */}
         <WhoHelp />
-        
+
       <div className="home__second__container">
         <div className='home__right__container'>
         </div>

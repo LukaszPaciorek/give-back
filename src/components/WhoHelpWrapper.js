@@ -19,15 +19,18 @@ class WhoHelpWrapper extends React.Component {
         currentLinkIndex: 1
       }
     }
-    handleClickShowSection = (event, i) => {
+    handleClickShowSection = (i) => {
       this.setState({
         currentLinkIndex: i
       })
+
     }
 
-    handlePassLinkIndex = (event, i) => {
-      event.preventDefault();
+    handlePassLinkIndex = (e, i) => {
+      e.preventDefault();
       this.handleClickShowSection(i);
+      console.log(i);
+
     }
 
 
@@ -40,7 +43,7 @@ class WhoHelpWrapper extends React.Component {
           {this.props.link.map((el, i) => {
             return (
               <li key={i} onClick={(e) => this.handlePassLinkIndex(e, i)} id={i}
-                  className={currentLinkIndex === i ? 'active' : ''}>
+                  className={currentLinkIndex === i ? 'active' : 'inactive'}>
                     <a href=''>{el}</a>
               </li>
             )

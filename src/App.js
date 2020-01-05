@@ -10,10 +10,12 @@ function App() {
   return (
     <>
       <HashRouter>
-        <Route exact path= "/" component = { Home } />
-        <Route exact path= "/logowanie" component = { LogIn } />
-        <Route exact path= "/rejestracja" component = { Register } />
-        <Route exact path= "/wylogowanie" component = { LogOut } />
+        <Switch>
+          <Route exact path= "/" component = { Home } />
+          <Route exact path= "/logowanie" component = { LogIn } />
+          <Route exact path= "/rejestracja" component = { Register } />
+          <Route exact path= "/wylogowanie" component = { LogOut } />
+        </Switch>
       </HashRouter>
     </>
   );
