@@ -7,6 +7,14 @@
   background-color: $color__white;
 }
 
+.contact__image {
+  flex: 80%;
+  height: 100%;
+  background: url('../../assets/Background-Contact-Form.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.25;
+}
+
 .contact__container {
   flex: 50%;
   height: 80%;
@@ -16,23 +24,90 @@
   @include decoration;
   width: 100%;
 }
+
 .contact__header p {
   font-size: 24px;
   text-align: center;
 }
 
-.contact__forms p {
-  font-size: 16px;
-  width: 70%;
-  display: block;
-  margin: 5% 15%;
+.contact__forms__container {
+  padding-top: 25px;
+  height: 125px;
   letter-spacing: 1.2px;
 }
 
-.contact__image {
-  flex: 80%;
+.contact__forms {
+  display: flex;
+  margin: 0 auto;
+  font-size: 16px;
+  width: 95%;
   height: 100%;
-  background: url('../../assets/Background-Contact-Form.jpg') no-repeat center center;
-  background-size: cover;
-  opacity: 0.25;
+  .forms__input {
+    position: relative;
+    width: 100%;
+    margin: 0 1%;
+    div.error__msg {
+      display: none;
+      position: absolute;
+      bottom: 15%;
+    }
+    label {
+      position: absolute;
+      top: 5%;
+    }
+    input {
+      background: transparent;
+      padding-top: 10px;
+      border: none;
+      border-bottom: 1px solid $color__grey;
+      width: 100%;
+      position: absolute;
+      top: 25%;
+    }
+  }
+}
+
+.contact__text__container {
+  letter-spacing: 1.2px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.forms__input__text {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid blue;
+  label {
+    position: absolute;
+    top: 5%;
+  }
+  input {
+    background: transparent;
+    padding-top: 10px;
+    border: none;
+    border-bottom: 1px solid $color__grey;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+  }
+  div.error__msg {
+    display: none;
+    position: absolute;
+    bottom: 15%;
+  }
+  .forms__button {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    button {
+      width: 90px;
+      height: 35px;
+      border: 1px solid $color__grey;
+    }
+  }
+  .text__area__input {
+    position: absolute;
+    bottom: 35%;
+  }
 }
