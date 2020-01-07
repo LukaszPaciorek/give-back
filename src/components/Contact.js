@@ -38,8 +38,19 @@ function Contact() {
           </div>
         </div>
       </div>
+      <div className='contact__footer'>
+        <div className='contact__sign'>
+          <p>Copyright by Coders Lab</p>
+        </div>
+        <div className='contact__logos'>
+          <div className='contact__facebook'></div>
+          <div className='contact__instagram'></div>
+        </div>
+      </div>
     </div>
   );
 }
+
+
 
 export { Contact };

@@ -1,0 +1,61 @@
+.logowanie {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.logowanie__section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 400px;
+  margin-top: 150px;
+  align-items: center;
+  justify-content: center;
+  .logowanie__decoration {
+    @include decoration;
+  }
+}
+
+.logowanie__login__container {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 200px;
+  width: 50%;
+  background-color: $color__white;
+  .logowanie__login__inputs {
+    position: absolute;
+    left: 50%;
+    margin-left: -30%;
+    bottom: 50%;
+    margin-bottom: -100px;
+    width: 60%;
+    height: 200px;
+    color: $color__grey;
+    input {
+
+      width: 100%;
+      background-color: $color__white;
+      border: none;
+      border-bottom: 1px solid $color__grey;
+      color: $color__black;
+    }
+  }
+}
+
+.logowanie__buttons {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  button {
+    width: 120px;
+    height: 35px;
+    border: none;
+    background-color: white;
+    &:hover {
+      border: 1px solid $color__grey;
+    }
+  }
+}

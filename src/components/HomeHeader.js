@@ -18,11 +18,11 @@ function HomeHeader() {
               offset={50} duration={500} delay={100} isDynamic={true}>
               <li>Start</li>
         </Link>
-        <Link activeClass="active" to="easy__steps" spy={true} smooth={true} hashSpy={true}
+        <Link activeClass="active" to="easy__steps__header" spy={true} smooth={true} hashSpy={true}
               offset={50} duration={500} delay={100} isDynamic={true}>
               <li>O co chodzi</li>
         </Link>
-        <Link activeClass="active" to="about__us__container" spy={true} smooth={true} hashSpy={true}
+        <Link activeClass="active" to="about__us" spy={true} smooth={true} hashSpy={true}
               offset={50} duration={500} delay={100} isDynamic={true}>
               <li>O nas</li>
         </Link>

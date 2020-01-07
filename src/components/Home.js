@@ -16,12 +16,12 @@ function Home() {
     <div className="home__container" id='home'>
       <div className='home__main__cont'>
 
-        {/*}<HomeHeader />
+        <HomeHeader />
         <HomeMain />
         <HomeColumns />
         <EasySteps />
         <AboutUs />
-        <WhoHelp /> */}
+        <WhoHelp />
         <Contact />
       <div className="home__second__container">
         <div className='home__right__container'>
