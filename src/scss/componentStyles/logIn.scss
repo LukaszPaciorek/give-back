@@ -50,10 +50,14 @@
   display: flex;
   justify-content: space-between;
   button {
+    display: block;
+    list-style: none;
     width: 120px;
     height: 35px;
     border: none;
-    background-color: white;
+    font-size: 18px;
+    background-color: $color__white;
+    color: $color__grey;
     &:hover {
       border: 1px solid $color__grey;
     }

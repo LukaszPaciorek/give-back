@@ -1,6 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
 import { HomeHeader } from './HomeHeader';
+import { NavLink } from 'react-router-dom';
+import { Link, animateScroll as scroll } from "react-scroll";
+
 
 const LogIn = () => {
     return  (
@@ -25,7 +28,7 @@ const LogIn = () => {
             </div>
           </div>
           <div className='logowanie__buttons'>
-            <button>Załóż konto</button>
+            <NavLink to='rejestracja'><button>Załóż konto</button></NavLink>
             <button>Zaloguj się</button>
           </div>
         </div>
