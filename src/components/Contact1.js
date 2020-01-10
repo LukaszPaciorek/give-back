@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-class Contact extends React.Component {
+class Contact1 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -77,4 +77,4 @@ class Contact extends React.Component {
 
 
 
-export { Contact };
+export { Contact1 };

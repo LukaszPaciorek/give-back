@@ -68,6 +68,23 @@
   }
 }
 
+.forms__textarea {
+  resize: none;
+  overflow: hidden;
+  position: absolute;
+  top: 20%;
+
+  background-color: $color__white;
+  line-height: 20px;
+  letter-spacing: 1.6px;
+  height: 80px;
+  width: 94%;
+  border-bottom: 1px solid $color__grey;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+
 .contact__text__container {
   letter-spacing: 1.2px;
   height: 200px;
@@ -77,6 +94,7 @@
   position: relative;
   width: 100%;
   height: 100%;
+  left: 3%;
   label {
     position: absolute;
     top: 5%;
@@ -97,7 +115,7 @@
   }
   .forms__button {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     right: 5%;
     button {
       width: 90px;
