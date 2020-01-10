@@ -1,0 +1,65 @@
+.rejestracja {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.rejestracja__section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 500px;
+  margin-top: 150px;
+  align-items: center;
+  justify-content: center;
+  .rejestracja__decoration {
+    @include decoration;
+  }
+}
+
+.rejestracja__login__container {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 300px;
+  width: 50%;
+  background-color: $color__white;
+  .rejestracja__login__inputs {
+    position: absolute;
+    left: 50%;
+    margin-left: -30%;
+    bottom: 50%;
+    margin-bottom: -175px;
+    width: 60%;
+    height: 300px;
+    color: $color__grey;
+    input {
+
+      width: 100%;
+      background-color: $color__white;
+      border: none;
+      border-bottom: 1px solid $color__grey;
+      color: $color__black;
+    }
+  }
+}
+
+.rejestracja__buttons {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  button {
+    display: block;
+    list-style: none;
+    width: 120px;
+    height: 35px;
+    border: none;
+    font-size: 18px;
+    background-color: $color__white;
+    color: $color__grey;
+    &:hover {
+      border: 1px solid $color__grey;
+    }
+  }
+}

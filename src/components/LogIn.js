@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { HomeHeader } from './HomeHeader';
+import { HomeHeaderLink } from './HomeHeaderLink';
 import { NavLink } from 'react-router-dom';
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -8,7 +8,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 const LogIn = () => {
     return  (
         <div className='logowanie'>
-        <HomeHeader />
+        <HomeHeaderLink />
 
         <div className="logowanie__section">
           <div className='logowanie__header'>
