@@ -1,11 +1,11 @@
-.logowanie {
+.account {
   width: 100%;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
-.logowanie__section {
+.account__section {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -13,19 +13,22 @@
   margin-top: 150px;
   align-items: center;
   justify-content: center;
-  .logowanie__decoration {
+  .account__decoration {
     @include decoration;
   }
 }
+.account__header h1 {
+  text-align: center;
+}
 
-.logowanie__login__container {
+.account__login__container {
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
   height: 200px;
   width: 50%;
   background-color: $color__white;
-  .logowanie__login__inputs {
+  .account__login__inputs {
     position: absolute;
     left: 50%;
     margin-left: -30%;
@@ -45,7 +48,7 @@
   }
 }
 
-.logowanie__buttons {
+.account__buttons {
   width: 65%;
   display: flex;
   justify-content: space-between;
@@ -62,4 +65,24 @@
       border: 1px solid $color__grey;
     }
   }
+}
+
+.account__logOut {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  button {
+    display: block;
+    list-style: none;
+    width: 180px;
+    height: 45px;
+    border: none;
+    font-size: 18px;
+    background-color: $color__white;
+    color: $color__grey;
+    &:hover {
+      border: 1px solid $color__grey;
+  }
+}
 }

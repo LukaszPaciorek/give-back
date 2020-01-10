@@ -4,23 +4,26 @@ import { HomeHeaderLink } from './HomeHeaderLink';
 import { NavLink } from 'react-router-dom';
 import { Link, animateScroll as scroll } from "react-scroll";
 
+
+
 const Register = () => {
     return  (
-        <div className='rejestracja'>
+
+        <div className='account'>
         <HomeHeaderLink />
 
-        <div className="rejestracja__section">
-          <div className='rejestracja__header'>
+        <div className="account__section__reg">
+          <div className='account__header'>
             <h1>Załóż konto</h1>
           </div>
-          <div className='rejestracja__decoration'></div>
-          <div className='rejestracja__login__container'>
-            <div className='rejestracja__login__inputs'>
-              <div className='rejestracja__email'>
+          <div className='account__decoration'></div>
+          <div className='account__login__container__reg'>
+            <div className='account__login__inputs__reg'>
+              <div className='account__email'>
                 <h3>Email</h3>
                 <input type='email'></input>
               </div>
-              <div className='rejestracja__password'>
+              <div className='account__password'>
                 <h3>Hasło</h3>
                 <input type='password'></input>
                 <h3>Powtórz hasło</h3>
@@ -28,7 +31,7 @@ const Register = () => {
               </div>
             </div>
           </div>
-          <div className='rejestracja__buttons'>
+          <div className='account__buttons'>
             <NavLink to='logowanie'><button>Zaloguj się</button></NavLink>
             <button>Załóż konto</button>
           </div>

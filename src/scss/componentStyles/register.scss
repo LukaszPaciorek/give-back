@@ -1,11 +1,5 @@
-.rejestracja {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-.rejestracja__section {
+
+.account__section__reg {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -13,19 +7,19 @@
   margin-top: 150px;
   align-items: center;
   justify-content: center;
-  .rejestracja__decoration {
+  .account__decoration {
     @include decoration;
   }
 }
 
-.rejestracja__login__container {
+.account__login__container__reg {
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
   height: 300px;
   width: 50%;
   background-color: $color__white;
-  .rejestracja__login__inputs {
+  .account__login__inputs__reg {
     position: absolute;
     left: 50%;
     margin-left: -30%;
@@ -41,25 +35,6 @@
       border: none;
       border-bottom: 1px solid $color__grey;
       color: $color__black;
-    }
-  }
-}
-
-.rejestracja__buttons {
-  width: 65%;
-  display: flex;
-  justify-content: space-between;
-  button {
-    display: block;
-    list-style: none;
-    width: 120px;
-    height: 35px;
-    border: none;
-    font-size: 18px;
-    background-color: $color__white;
-    color: $color__grey;
-    &:hover {
-      border: 1px solid $color__grey;
     }
   }
 }

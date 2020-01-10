@@ -9,6 +9,9 @@ function HomeHeader() {
         <ul className='header__nav__login'>
           <NavLink to='logowanie'><li>Zaloguj</li></NavLink>
           <NavLink to='rejestracja'><li>Załóż konto</li></NavLink>
+
+          {/* <NavLink to='wylogowano'><li>Wylogowano</li></NavLink> */}
+          
         </ul>
       </nav>
 

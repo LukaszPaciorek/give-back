@@ -14,7 +14,7 @@ function App() {
           <Route exact path= "/" component = { Home } />
           <Route exact path= "/logowanie" component = { LogIn } />
           <Route exact path= "/rejestracja" component = { Register } />
-          <Route exact path= "/wylogowanie" component = { LogOut } />
+          <Route exact path= "/wylogowano" component = { LogOut } />
         </Switch>
       </HashRouter>
     </>
