@@ -11,17 +11,15 @@ class Contact1 extends React.Component {
         email: '',
         text: '',
       },
-      errors: {}
+      errors: {},
+      formIsValid: ''
     };
-
-
   }
 
   handleValidation() {
     let fields = this.state.fields;
     let errors = {};
     let formIsValid = true;
-
 
     //Name
     if(!fields['name']) {
@@ -49,7 +47,6 @@ class Contact1 extends React.Component {
       errors['text'] = 'Pole powinno zawierać wiadomość z minimum 120 znaków';
     }
 
-
      this.setState({errors: errors});
 
      let nameValid = (errors.name !== undefined );
@@ -65,35 +62,26 @@ class Contact1 extends React.Component {
      console.log(`Błąd: ${errors.text}`);
      console.log(`Czy walidacja text jest nieprawidłowa? ${textValid}`)
 
+     console.log(`Czy walidacja przebiegła pomyślnie? ${formIsValid}`)
 
-     return formIsValid;
+     return this.setState({formIsValid});
    }
 
    contactSubmit(e) {
      e.preventDefault();
-
-     if(this.handleValidation()) {
-       alert('Formularz poprawny');
-     }  else {
-       alert('Formularz ma błędy');
-
-     }
+     this.handleValidation()
    }
 
    handleChange(field, e) {
      let fields = this.state.fields;
+     let formIsValid = this.state.formIsValid;
      fields[field] = e.target.value;
      this.setState({fields});
-
+     this.setState({formIsValid});
    }
 
-
-
-
-
-
   render() {
-
+    let formIsValid = (this.state.formIsValid);
     let nameValid = (this.state.errors.name === undefined );
     let emailValid = (this.state.errors.email === undefined );
     let textValid = (this.state.errors.text === undefined );
@@ -108,12 +96,8 @@ class Contact1 extends React.Component {
           </div>
           <div className='contact__decoration'>
           </div>
-
-
-
+          <p className='validation__succesfull' style={formIsValid ? {opacity: '1'} : {opacity: '0'}}>Wiadomość została wysłana! Wkrótce się skontaktujemy.</p>
           <div className='contact__form'>
-
-
           </div>
           <div className='contact__forms__container'>
             <form className='contact__forms' >
@@ -123,19 +107,16 @@ class Contact1 extends React.Component {
                      placeholder='Imie'
                      onChange={this.handleChange.bind(this, 'name')}
                      value={this.state.fields['name']}></input>
-              <p className='error__name' style={nameValid? {opacity: '0'} : {opacity: '1'}}>Podane imię jest nieprawidłowe!</p>
+              <p className='error__name' style={nameValid ? {opacity: '0'} : {opacity: '1'}}>Podane imię jest nieprawidłowe!</p>
               </div>
-
               <div className='forms__input'>
               <label>Wpisz swój email</label>
               <input refs='email' type='email' id='email__input' className='email__input'
                     placeholder='E-mail'
                     onChange={this.handleChange.bind(this, 'email')}
                     value={this.state.fields['email']} ></input>
-              <p className='error__email' style={emailValid? {opacity: '0'} : {opacity: '1'}}>Podany adres email jest nieprawidłowy!!</p>
+              <p className='error__email' style={emailValid ? {opacity: '0'} : {opacity: '1'}}>Podany adres email jest nieprawidłowy!!</p>
               </div>
-
-
               <div className='contact__text__container'>
                 <div className='forms__input__text'>
                     <label>Wpisz swoją wiadomość</label>
@@ -147,15 +128,11 @@ class Contact1 extends React.Component {
                   <p className="error__txt" style={textValid? {opacity: '0'} : {opacity: '1'}}  >Wiadomość musi mieć conajmniej 120 znaków!</p>
                 </div>
               </div>
-
               <div className='forms__button'>
                 <button type='submit' className='forms__button__submit' onClick={this.contactSubmit.bind(this)}>Wyślij</button>
               </div>
-
             </form>
           </div>
-
-
         </div>
         <div className='contact__footer'>
           <div className='contact__sign'>
@@ -170,7 +147,5 @@ class Contact1 extends React.Component {
     );
   }
 }
-
-
 
 export { Contact1 };
