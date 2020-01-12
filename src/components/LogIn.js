@@ -85,7 +85,7 @@ class LogIn extends Component {
                 <h3>Email</h3>
                 <input type='email' required className='form-control' name='email'
                   value={this.state.email}
-                  placeholder='email'
+                  // placeholder='email'
                   onChange={this.handleUserInput} />
                   <p className={'validateData'}> {this.state.emailError}</p>
 
@@ -94,7 +94,7 @@ class LogIn extends Component {
                 <h3>Hasło</h3>
                 <input type='password' className='form-control' name='password'
                   value={this.state.password}
-                  placeholder='password'
+                  // placeholder='password'
                   onChange={this.handleUserInput} />
                   <p className={'validateData'}> {this.state.passwordError}</p>
 

@@ -45,21 +45,24 @@ class Contact extends React.Component {
               <div className="error__msg">Podany adres email jest nieprawidłowy!!</div>
               </div>
             </div>
-          </div>
 
-          <div className='contact__text__container'>
-            <div className='forms__input__text'>
-              <form onSubmit={this.handleSubmit}>
-                <label>Wpisz swoją wiadomość</label>
-                <textarea onfocus="if(this.value==this.defaultValue)this.value='';" className='forms__textarea'value={this.state.value} onChange={this.handleChange} wrap='hard' cols={40} rows={10} placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie dolor ac tincidunt blandit. Sed pulvinar lorem id convallis accumsan.' />
-              </form>
-              <div className="error__msg">Wiadomość musi mieć conajmniej 120 znaków!</div>
-              <div className='forms__button'>
-                <button type='submit' className='forms__button__submit'>Wyślij</button>
+            <div className='contact__text__container'>
+              <div className='forms__input__text'>
+                <form onSubmit={this.handleSubmit}>
+                  <label>Wpisz swoją wiadomość</label>
+                  <textarea onfocus="if(this.value==this.defaultValue)this.value='';" className='forms__textarea'value={this.state.value} onChange={this.handleChange} wrap='hard' cols={40} rows={10} placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie dolor ac tincidunt blandit. Sed pulvinar lorem id convallis accumsan.' />
+                </form>
+                <div className="error__msg">Wiadomość musi mieć conajmniej 120 znaków!</div>
+                <div className='forms__button'>
+                  <button type='submit' className='forms__button__submit'>Wyślij</button>
+                </div>
+              </div>
             </div>
 
-            </div>
           </div>
+
+
+
         </div>
         <div className='contact__footer'>
           <div className='contact__sign'>
